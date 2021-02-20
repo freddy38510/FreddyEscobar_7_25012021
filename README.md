@@ -18,14 +18,14 @@ lors de la soutenance du projet n°7.
   git clone --recurse-submodules https://github.com/freddy38510/FreddyEscobar_7_25012021.git && cd FreddyEscobar_7_25012021
   ```
 
-- Depuis le dossier backend, installer les dépendances, puis faites les migrations vers la base de données configurée à l'aide du fichier `src/config/knexConfig.js`
+- Depuis le dossier backend, installer les dépendances, puis faites les migrations vers la base de données configurée à l'aide du fichier `.env`
 
   ```bash
   cd backend
 
   yarn
 
-  yarn knex:prod
+  yarn knex:prod migrate:latest
   ```
 
   Enfin, lancez le serveur
